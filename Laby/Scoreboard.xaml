@@ -1,0 +1,21 @@
+﻿<Window x:Class="Laby.Scoreboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laby"
+        mc:Ignorable="d"
+        Title="Scoreboard" Height="450" Width="800" Background="CornflowerBlue">
+
+    <Grid>
+        <Button Content="Exit" 
+                HorizontalAlignment="Center" Margin="0,322,0,0"  BorderBrush="#01000000"  FontFamily="Segoe UI Black" FontSize="15" VerticalAlignment="Top" 
+                Height="80" Width="200" Click="exit_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/buttonb.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="score_list" Margin="126,65,122,108" Text="" TextWrapping="Wrap" Background="Lavender" BorderThickness="10" TextAlignment="Center" FontSize="19" FontFamily="Segoe UI Black" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
